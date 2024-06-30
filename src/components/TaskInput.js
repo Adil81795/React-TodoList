@@ -24,8 +24,9 @@ const TaskInput = () => {
         value={task}
         onChange={(e) => setTask(e.target.value)}
         onKeyPress={(e) => e.key === 'Enter' && handleAddTask()}
+        sx={{ flexGrow: 1, marginRight: 2 }}
       />
-      <Button variant="contained" color="primary" onClick={handleAddTask} sx={{ ml: 2 }}>
+      <Button variant="contained" color="primary" onClick={handleAddTask}>
         Add Task
       </Button>
     </Box>

@@ -7,7 +7,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" className="App">
       <Typography variant="h3" component="h1" gutterBottom>
         To-Do List
       </Typography>

@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import Checkbox from '@mui/material/Checkbox';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle'; // Importing CheckCircleIcon
 import Box from '@mui/material/Box';
 
 const TaskList = () => {
@@ -53,6 +54,7 @@ const TaskList = () => {
               disableRipple
               onClick={() => handleToggle(task.id)}
             />
+            <CheckCircleIcon color="primary" sx={{ marginRight: 2 }} /> {/* Add the icon */}
             <ListItemText
               primary={task.text}
               style={{ textDecoration: task.completed ? 'line-through' : 'none' }}
